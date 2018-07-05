@@ -7,7 +7,6 @@ var io = require("socket.io")(server);
 app.use(express.static("./public"));
 
 io.on("connection", function (socket) {
-  
   socket.on("chat", function (message) {
     socket.broadcast.emit("message", message);
   });

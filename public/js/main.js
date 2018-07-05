@@ -1,6 +1,6 @@
 var socket = io("http://localhost:3000");
 
-socket.on("disconnect", function () {
+socket.on("discount", function () {
 	setTitle("Disconnected");
 });
 
