@@ -8,7 +8,7 @@ socket.on("connect", function () {
 	setTitle("Connected to Cyber Chat");
 });
 
-socket.on("message" function (message) {
+socket.on("message", function (message) {
 	printMessage(message);
 });
 
